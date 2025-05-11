@@ -4,11 +4,12 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar.jsx'
+import Oproducts from './components/Oproducts/Oproducts.jsx'
 
 
 const router = createBrowserRouter([
   {path: "/", element: <App/>},
-  {path: "/products", element: <Navbar/>},
+  {path: "/products", element: <Oproducts/>},
 ])
 
 
