@@ -60,10 +60,7 @@ function About() {
                 className="bg-white  "
                 key={id}
               >
-                <div
-                  className=" p-4 shadow-2xl rounded-xl min-h-[130px]   "
-                 
-                >
+                <div className=" p-4 shadow-2xl rounded-xl min-h-[130px]   ">
                   <div className="mb-2 ">{icon}</div>
                   <div className=" font-semibold text-[14px]">{title}</div>
                   <p className="text-[12px]">{paragraph}</p>
@@ -121,7 +118,7 @@ function About() {
           ></iframe>
 
           <iframe
-            className="w-[80%] md:w-[300px] h-[200px] rounded h-[200px] "
+            className="w-[80%] md:w-[300px] rounded h-[200px] "
             src="https://www.youtube.com/embed/f8U1N0mJhG8?si=Zdz-FYYE2U_MeKgG"
             title="YouTube video player"
             frameborder="0"

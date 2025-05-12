@@ -25,14 +25,10 @@ export const NavbarMenu = [
   },
   {
     id: 4,
-    title: "Blogs",
+    title: "Blogss",
     link: "#",
   },
-  {
-    id: 5,
-    title: "Pricing",
-    link: "#",
-  },
+
 ];
 
 export const ProductsData = [
