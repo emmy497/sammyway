@@ -21,16 +21,18 @@ function App() {
   }, []);
 
   if (loading) return <Spinner />;
+
+  
   return (
     <main className="overflow-hidden">
-      <Navbar />
+      {/* <Navbar />
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Oproducts />} />
         </Routes>
       </Router>
-      <Footer />
+      <Footer /> */}
     </main>
   );
 }

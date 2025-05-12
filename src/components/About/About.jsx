@@ -98,18 +98,17 @@ function About() {
         <div className="videos flex flex-col md:flex-row  justify-evenly items-center gap-y-4 ">
           <iframe
             className=" w-[80%] md:w-[300px] h-[200px] rounded"
-            src="https://www.youtube.com/embed/GWsryvZfeYw?si=n-gp9SEB9uNhpF4r"
+            src="https://www.youtube.com/embed/nhLH37hMkQc?si=XR34Q_6VRGHetqvK"
             title="YouTube video player"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-         web-share"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
 
           <iframe
             className="w-[80%] md:w-[300px] h-[200px]  rounded"
-            src="https://www.youtube.com/embed/XQX2Jky-_ys?si=wH7O4enPJWmOy1DE"
+            src="https://www.youtube.com/embed/uOROroJj-gs?si=pGkzkdsyWDu-kX1-"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -9,8 +9,22 @@ import Services from "../Services/Services";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import Header from "../Header/Header";
+import Spinner from "../Spinner/Spinner";
+import { useState, useEffect } from "react";
+
 
 function Home() {
+    const [loading, setLoading] = useState(true);
+  
+    useEffect(() => {
+      const timeout = setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+  
+      return () => clearTimeout(timeout);
+    }, []);
+  
+    if (loading) return <Spinner />;
   return (
     // <div id="home" class=" mt-6 h-[80vh] md:h-[100vh] ">
     //   <div className="flex relative bg-[#a569bd] ">
@@ -49,12 +63,11 @@ function Home() {
     // </div>
 
     <main className="overflow-hidden">
-     <Navbar /> 
+      <Navbar />
       <Header />
       <About />
       <Services />
-      {/* About section */}
-
+      <Footer />
     </main>
   );
 }

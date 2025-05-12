@@ -1,13 +1,16 @@
 import { motion } from "motion/react";
-import { FaInstagram, FaTwitter, FaTiktok, FaFacebookF ,} from "react-icons/fa";
+import { FaInstagram, FaTwitter, FaTiktok, FaFacebookF } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div id="Footer" className="w-full flex flex-col md:flex-row bg-[#a569bd] rounded-t-3xl pt-14 px-4 pb-10 ">
+    <div
+      id="Footer"
+      className="w-full flex flex-col md:flex-row bg-[#a569bd] rounded-t-3xl pt-14 px-4 pb-10 "
+    >
       <motion.div
         initial={{ opacity: 0, y: 100 }} // Start 100px below, invisible
         whileInView={{ opacity: 1, y: 0 }} // Animate to position
@@ -26,11 +29,19 @@ function Footer() {
 
         {/* Icos Section */}
         <div className="icons-div flex   ">
-          {/* <FaInstagram className="mr-4" size={20} />
-          <FaTwitter className="mr-4" size={20} /> */}
-          <Link to="https://www.tiktok.com/@adeolaashamo?_t=ZM-8u1tY6qsP03&_r=1"><FaTiktok className="mr-4" size={20} /></Link>
-          <Link to="https://www.youtube.com/@samiwayconsult"><FaYoutube size={20} className="mr-4" /></Link>
-          <Link to=""><FaFacebookF size={20} /></Link>
+          <Link to="https://www.instagram.com/samiwayeducational?igsh=Ym84ZzhydHBxOGQz">
+            <FaInstagram className="mr-4" size={20} />
+          </Link>
+          {/* <FaTwitter className="mr-4" size={20} /> */}
+          <Link to="https://www.tiktok.com/@youcanread?_t=ZN-8ueLOBF05va&_r=1">
+            <FaTiktok className="mr-4" size={20} />
+          </Link>
+          <Link to="https://youtube.com/@samiwayconsult?si=auNjfoFafurLzP5h">
+            <FaYoutube size={20} className="mr-4" />
+          </Link>
+          <Link to="https://www.facebook.com/share/1N83799wYZ/">
+            <FaFacebookF size={20} />
+          </Link>
         </div>
       </motion.div>
 
@@ -57,7 +68,9 @@ function Footer() {
             <div className="mr-2">
               <FaMapMarkerAlt />
             </div>
-          <div className="text-[14px]">6b, Adams adepju close, ijaiye, Lagos</div>
+            <div className="text-[14px]">
+              6b, Adams adepju close, ijaiye, Lagos
+            </div>
           </div>
           <div className="flex">
             <div className="mr-2">

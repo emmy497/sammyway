@@ -6,16 +6,19 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Oproducts from "./components/Oproducts/Oproducts.jsx";
 import Home from "./components/Home/Home.jsx";
+import { BrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
-  {path: "/", element: <Home/>},
-  {path: "/products", element: <Oproducts/>},
-])
+  { path: "/", element: <Home /> },
+  { path: "/products", element: <Oproducts /> },
+]);
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-   <RouterProvider router={router} />
-  </StrictMode>,
-)
+createRoot(document.getElementById("root")).render(
+  <RouterProvider router={router} />
+);
 
-// createRoot(document.getElementById("root")).render(<App />);
+// createRoot(document.getElementById("root")).render(
+//   <BrowserRouter>
+//     <App />
+//   </BrowserRouter>
+// );
