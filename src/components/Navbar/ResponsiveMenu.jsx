@@ -1,16 +1,13 @@
-
-// import { motion } from "motion/react"
 import { AnimatePresence, motion } from "framer-motion";
-import NavItem from "./NavItem";
+
 import { Link } from "react-router-dom";
 
-function ResponsiveMenu({ open, toggleMenu}) {
+function ResponsiveMenu({ open, toggleMenu }) {
   const navItems = [
     { link: "Home", path: "/#home" },
     { link: "About", path: "/#about" },
     { link: "Services", path: "/#services" },
     { link: "products", path: "/products" },
-
   ];
 
   return (
@@ -24,17 +21,16 @@ function ResponsiveMenu({ open, toggleMenu}) {
         >
           <div className="text-xl font-semibold uppercase bg-[#a569bd] text-white py-10 m-6 rounded-3xl md:hidden">
             <ul className="flex flex-col justify-center items-center gap-10">
-            { navItems.map(({ link, path }) => (
-              <Link
-                key={path}
-                to={path}
-                className="block text-white first:font-medium text-[14px]"
-                onClick={toggleMenu}
-              >
-                {link}
-              </Link>
-            ))
-        }
+              {navItems.map(({ link, path }) => (
+                <Link
+                  key={path}
+                  to={path}
+                  className="block text-white first:font-medium text-[14px]"
+                  onClick={toggleMenu}
+                >
+                  {link}
+                </Link>
+              ))}
             </ul>
           </div>
         </motion.div>

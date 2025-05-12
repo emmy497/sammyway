@@ -1,6 +1,5 @@
 import Navbar from "../Navbar/Navbar";
 import tenses from "../../assets/images/tenses.jpeg";
-import mistakes from "../../assets/images/mistakes.jpeg";
 import sales from "../../assets/images/sales.jpeg";
 import confusables from "../../assets/images/confusables.jpeg";
 import Modal from "../Modal/Modal";
@@ -9,7 +8,6 @@ import { SlideLeft } from "../../utility/animation";
 import { motion } from "framer-motion";
 import Spinner from "../Spinner/Spinner";
 import Footer from "../Footer/Footer";
-
 
 function Oproducts() {
   const [loading, setLoading] = useState(true);
@@ -63,7 +61,7 @@ function Oproducts() {
   ];
   return (
     <>
-      <div className="relative w-[100%] ">
+      <div className="relative w-[100%] overflow-hidden">
         <Navbar />
         <div className="cards-container grid grid-cols-1 md:grid-cols-2 gap-6 p-[7%] px-[5%] z-20">
           {materials.map((material) => (

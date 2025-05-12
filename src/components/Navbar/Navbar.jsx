@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "../Logo/Logo";
 import { FaX, FaBars } from "react-icons/fa6";
 import ResponsiveMenu from "./ResponsiveMenu";
-import { FaGraduationCap } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -40,7 +39,9 @@ function Navbar() {
       <nav className="px-[4%] pt-[20px]  md:pt-[40px] md:px-[7%]">
         <div className="flex justify-between items-center text-base gap-8">
           <div className="font-bold">
-           <Link to="/#home"><Logo /></Link> 
+            <Link to="/#home">
+              <Logo />
+            </Link>
           </div>
 
           {/* Nav items for large screens */}
@@ -62,13 +63,12 @@ function Navbar() {
             </div>
           </Link>
 
-          
           {/* Menu buttons for only mobile devices */}
           <div className="md:hidden">
             <button onClick={toggleMenu}>
               {isMenuOpen ? (
                 <FaX className="h-[23px] w-[23px] text-gray-900 cursor-pointer" />
-              ) : ( 
+              ) : (
                 <FaBars className="h-[25px] w-25px]  text-gray-900 cursor-pointer" />
               )}
             </button>
