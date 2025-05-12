@@ -25,14 +25,14 @@ function ResponsiveMenu({ open, toggleMenu}) {
           <div className="text-xl font-semibold uppercase bg-[#a569bd] text-white py-10 m-6 rounded-3xl md:hidden">
             <ul className="flex flex-col justify-center items-center gap-10">
             { navItems.map(({ link, path }) => (
-              <a
+              <Link
                 key={path}
-                href={path}
+                to={path}
                 className="block text-white first:font-medium text-[14px]"
                 onClick={toggleMenu}
               >
                 {link}
-              </a>
+              </Link>
             ))
         }
             </ul>
