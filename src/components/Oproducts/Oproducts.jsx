@@ -8,6 +8,8 @@ import { useState, useEffect } from "react";
 import { SlideLeft } from "../../utility/animation";
 import { motion } from "framer-motion";
 import Spinner from "../Spinner/Spinner";
+import Footer from "../Footer/Footer";
+
 
 function Oproducts() {
   const [loading, setLoading] = useState(true);
@@ -60,37 +62,40 @@ function Oproducts() {
     },
   ];
   return (
-    <div className="relative w-[100%] ">
-      <Navbar />
-      <div className="cards-container grid grid-cols-1 md:grid-cols-2 gap-6 p-[7%] px-[5%] z-20">
-        {materials.map((material) => (
-          <motion.div
-            whileHover={{ scale: 1.01 }}
-            transition={{ type: "spring", stiffness: 300 }}
-            variants={SlideLeft(material.delay)}
-            initial="hidden"
-            whileInView="visible"
-            key={material.id}
-            onClick={() => setIsModalOpen(true)}
-            className="flex flex-row shadow-2xl p-4 text-[14px] rounded-2xl cursor-pointer "
-          >
-            <div className="w-[200px] h-[100px] mr-6">
-              <img
-                className="w-full h-full object-cover"
-                src={material.imageUrl}
-                alt=""
-              />
-            </div>
-            <div className="">
-              <div className="mb-6"> {material.description}</div>
-              <div className="font-bold"> {material.price}</div>
-            </div>
-          </motion.div>
-        ))}
-      </div>
+    <>
+      <div className="relative w-[100%] ">
+        <Navbar />
+        <div className="cards-container grid grid-cols-1 md:grid-cols-2 gap-6 p-[7%] px-[5%] z-20">
+          {materials.map((material) => (
+            <motion.div
+              whileHover={{ scale: 1.01 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              variants={SlideLeft(material.delay)}
+              initial="hidden"
+              whileInView="visible"
+              key={material.id}
+              onClick={() => setIsModalOpen(true)}
+              className="flex flex-row shadow-2xl p-4 text-[14px] rounded-2xl cursor-pointer "
+            >
+              <div className="w-[200px] h-[100px] mr-6">
+                <img
+                  className="w-full h-full object-cover"
+                  src={material.imageUrl}
+                  alt=""
+                />
+              </div>
+              <div className="">
+                <div className="mb-6"> {material.description}</div>
+                <div className="font-bold"> {material.price}</div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
 
-      <Modal isModalOpen={isModalOpen} handleClose={handleCloseModal} />
-    </div>
+        <Modal isModalOpen={isModalOpen} handleClose={handleCloseModal} />
+      </div>
+      <Footer />
+    </>
   );
 }
 
