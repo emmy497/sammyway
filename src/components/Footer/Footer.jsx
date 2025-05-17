@@ -21,10 +21,11 @@ function Footer() {
         <p className="text-[14px]">Making you relevant to the world</p>
 
         <p className="mb-4 text-[14px]">
-          Holistic Learning for Children & Adults
-          <br className="hidden md:block" /> Teaching reading, writing, public
-          speaking, <br className="hidden md:block " /> and core subjects to
-          improve confidence and knowledge.
+          Complete Learning for Children & Adults
+          <br className="hidden md:block" /> We teach reading, writing, public
+          speaking,
+          <br className="hidden md:block " /> and core subjects to improve
+          confidence and knowledge.
         </p>
 
         {/* Icos Section */}

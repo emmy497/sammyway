@@ -27,11 +27,11 @@ function Header() {
             animate="visible"
             className="text-slate-600 text-[12px] md:text-[19px] mb-4  "
           >
-            Complete Learning for Children & Adults Teaching reading,{" "}
+            Complete Learning for Children & Adults Teaching reading.{" "}
             <br className="hidden md:block" />
-            writing, public speaking, and core subjects to improve{" "}
+            We teach reading, writing, public speaking, and core subjects
             <br className="hidden md:block" />
-            confidence and knowledge.
+            to improve confidence and knowledge.
           </motion.p>
 
           <motion.div
@@ -40,7 +40,7 @@ function Header() {
             animate="visible"
             className="bg-[#a569bd]  rounded-xl flex justify-center items-center p-4  md:w-[150px] text-white cursor-pointer hover:bg-[#9d69bd]"
           >
-           <a href="mailto:samiwayconsult@gmail.com">Get in touch</a>
+            <a href="mailto:samiwayconsult@gmail.com">Get in touch</a>
           </motion.div>
         </div>
 
