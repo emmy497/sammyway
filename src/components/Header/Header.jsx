@@ -27,7 +27,7 @@ function Header() {
             animate="visible"
             className="text-slate-600 text-[12px] md:text-[19px] mb-4  "
           >
-            Complete Learning for Children & Adults Teaching reading.{" "}
+            Complete Learning for Children & Adults.{" "}
             <br className="hidden md:block" />
             We teach reading, writing, public speaking, and core subjects
             <br className="hidden md:block" />
