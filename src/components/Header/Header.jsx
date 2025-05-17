@@ -40,7 +40,7 @@ function Header() {
             animate="visible"
             className="bg-[#a569bd]  rounded-xl flex justify-center items-center p-4  md:w-[150px] text-white cursor-pointer hover:bg-[#9d69bd]"
           >
-            <Link to="#services">Get in touch</Link>
+           <a href="mailto:samiwayconsult@gmail.com">Get in touch</a>
           </motion.div>
         </div>
 

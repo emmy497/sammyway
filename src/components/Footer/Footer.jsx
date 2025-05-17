@@ -9,7 +9,7 @@ function Footer() {
   return (
     <div
       id="Footer"
-      className="w-full flex flex-col md:flex-row bg-[#a569bd] rounded-t-3xl pt-14 px-4 pb-10 "
+      className="w-full flex flex-col md:flex-row justify-center bg-[#a569bd] rounded-t-3xl pt-14 px-4 pb-10 "
     >
       <motion.div
         initial={{ opacity: 0, y: 100 }} // Start 100px below, invisible
@@ -29,19 +29,37 @@ function Footer() {
 
         {/* Icos Section */}
         <div className="icons-div flex   ">
-          <Link to="https://www.instagram.com/samiwayeducational?igsh=Ym84ZzhydHBxOGQz">
+          <a
+            href="https://www.instagram.com/samiwayeducational?igsh=Ym84ZzhydHBxOGQz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaInstagram className="mr-4" size={20} />
-          </Link>
+          </a>
           {/* <FaTwitter className="mr-4" size={20} /> */}
-          <Link to="https://www.tiktok.com/@youcanread?_t=ZN-8ueLOBF05va&_r=1">
+          <a
+            href="https://www.tiktok.com/@youcanread?_t=ZN-8ueLOBF05va&_r=1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaTiktok className="mr-4" size={20} />
-          </Link>
-          <Link to="https://youtube.com/@samiwayconsult?si=auNjfoFafurLzP5h">
+          </a>
+
+          <a
+            href="https://youtube.com/@samiwayconsult?si=auNjfoFafurLzP5h"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaYoutube size={20} className="mr-4" />
-          </Link>
-          <Link to="https://www.facebook.com/share/1N83799wYZ/">
+          </a>
+
+          <a
+            href="https://www.facebook.com/share/1N83799wYZ/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaFacebookF size={20} />
-          </Link>
+          </a>
         </div>
       </motion.div>
 

@@ -9,7 +9,7 @@ function Logo() {
     // </div>
     <>
       <div>
-        <img src={logo} alt="logo" className="w-[50px] h-[50px]" />
+        <img src={logo} alt="logo" className="w-[60px] h-[60px]" />
       </div>
     </>
   );
