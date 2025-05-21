@@ -1,6 +1,6 @@
 import Navbar from "../Navbar/Navbar";
 import tenses from "../../assets/images/tenses.jpeg";
-import sales from "../../assets/images/sales.jpeg";
+import sales from "../../assets/images/sales.png";
 import confusables from "../../assets/images/confusables.jpeg";
 import Modal from "../Modal/Modal";
 import { useState, useEffect } from "react";
@@ -8,6 +8,9 @@ import { SlideLeft } from "../../utility/animation";
 import { motion } from "framer-motion";
 import Spinner from "../Spinner/Spinner";
 import Footer from "../Footer/Footer";
+
+
+
 
 function Oproducts() {
   const [loading, setLoading] = useState(true);

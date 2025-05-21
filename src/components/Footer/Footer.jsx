@@ -88,7 +88,7 @@ function Footer() {
               <FaMapMarkerAlt />
             </div>
             <div className="text-[14px]">
-              6b, Adams adepju close, ijaiye, Lagos
+             6b, Adams Adepeju Close, Ijaiye, Lagos.
             </div>
           </div>
           <div className="flex">
