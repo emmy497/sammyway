@@ -1,6 +1,7 @@
 import Navbar from "../Navbar/Navbar";
 import tenses from "../../assets/images/tenses.jpeg";
-import sales from "../../assets/images/sales.png";
+import sale from "../../assets/images/sale.png";
+import spell from "../../assets/images/spell.png";
 import confusables from "../../assets/images/confusables.jpeg";
 import Modal from "../Modal/Modal";
 import { useState, useEffect } from "react";
@@ -8,9 +9,6 @@ import { SlideLeft } from "../../utility/animation";
 import { motion } from "framer-motion";
 import Spinner from "../Spinner/Spinner";
 import Footer from "../Footer/Footer";
-
-
-
 
 function Oproducts() {
   const [loading, setLoading] = useState(true);
@@ -40,7 +38,7 @@ function Oproducts() {
     },
     {
       id: 2,
-      imageUrl: sales,
+      imageUrl: sale,
       description:
         "50 Common Errors in English that can cause you shame in public.  (50 Common English Mistakes and Their Corrections)",
       price: "#3,000",
@@ -55,7 +53,7 @@ function Oproducts() {
     },
     {
       id: 4,
-      imageUrl: sales,
+      imageUrl: spell,
       description:
         "How to spell and write with ease (Spelling Handout + video lecture on spelling and writing)",
       price: "#10,000",
