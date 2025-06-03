@@ -9,6 +9,7 @@ import { SlideLeft } from "../../utility/animation";
 import { motion } from "framer-motion";
 import Spinner from "../Spinner/Spinner";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 function Oproducts() {
   const [loading, setLoading] = useState(true);
@@ -67,13 +68,11 @@ function Oproducts() {
         <div className="cards-container grid grid-cols-1 md:grid-cols-2 gap-6 p-[7%] px-[5%] z-20">
           {materials.map((material) => (
             <motion.div
-              whileHover={{ scale: 1.01 }}
               transition={{ type: "spring", stiffness: 300 }}
               variants={SlideLeft(material.delay)}
               initial="hidden"
               whileInView="visible"
               key={material.id}
-              onClick={() => setIsModalOpen(true)}
               className="flex flex-row shadow-2xl p-4 text-[14px] rounded-2xl cursor-pointer "
             >
               <div className="w-[200px] h-[100px] mr-6">
@@ -83,9 +82,17 @@ function Oproducts() {
                   alt=""
                 />
               </div>
-              <div className="">
+              <div className=" w-[100%]">
                 <div className="mb-6"> {material.description}</div>
-                <div className="font-bold"> {material.price}</div>
+                <div className="flex items-center ">
+                  <div className="font-bold mr-auto"> {material.price}</div>
+                  <div
+                    className=" rounded cursor-pointer w-[80px] p-2 text-white bg-[#a569bd] hover:bg-[#9d69bd] text-center "
+                    onClick={() => setIsModalOpen(true)}
+                  >
+                    Order
+                  </div>
+                </div>
               </div>
             </motion.div>
           ))}

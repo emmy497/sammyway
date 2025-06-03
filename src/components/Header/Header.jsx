@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <section className="px-[4%]  md:pt-[7%] md:px-[7%] z-10  md:mb-0 mt-10 md:mt-0 h-[100vh]">
+    <section className="px-[4%]  md:pt-[7%] md:px-[7%] z-10  md:mb-0 mt-10 md:mt-0 h-[calc(100vh-80px)]">
       <div class=" grid grid-cols-1 md:grid-cols-2  relative">
         <div class="flex flex-col items-center md:items-start  md:pb-[200px] text-center md:text-start pt-[40px] ">
           <motion.h1

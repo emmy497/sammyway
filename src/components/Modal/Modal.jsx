@@ -1,7 +1,12 @@
+import { AnimatePresence, motion } from "framer-motion";
+
 function Modal({ isModalOpen, handleClose }) {
   return (
-    <div
-      className={`fixed bg-black opacity-90 inset-0 z-50 ${
+    <motion.div
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -100 }}
+      className={`fixed bg-black opacity-95 inset-0 z-50 ${
         isModalOpen ? "block" : "hidden"
       }`}
     >
@@ -23,7 +28,7 @@ function Modal({ isModalOpen, handleClose }) {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
