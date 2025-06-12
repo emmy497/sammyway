@@ -28,7 +28,7 @@ function Card() {
       id: 2,
       title: " Academic Tutoring (Children & Adults)",
       paragraph:
-        "Get support in subjects like English, math, science, and more.",
+        "Get support in subjects like English, maths, science, and more.",
       icon: <RiParentFill size="30px" />,
       delay: 0.6,
     },
